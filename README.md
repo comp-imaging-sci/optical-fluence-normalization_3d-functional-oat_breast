@@ -71,18 +71,17 @@ wget https://dataverse.harvard.edu/api/access/datafile/6178963 -O ./data/RECON_N
 ```
 ├── ArteryVeinDetectionClassification.m
 ├── ImageColorEncodedDepth.m
+├── LICENSE
 ├── OpticalFluenceNormalization.m
 ├── README.md
-├── functions
-│   ├── BreastMask.m
-│   ├── DistancePointEllipse.m
-│   ├── LinearUnmixing2.m
-│   ├── LinearUnmixing3.m
-│   ├── MVBPColorEncodedDepth.m
-│   ├── MaximumVoxelBrightnessTheta.m
-│   └── SphericalCoord.m
-└── license
-    └── gpl-3.0.txt
+└── functions
+    ├── BreastMask.m
+    ├── DistancePointEllipse.m
+    ├── LinearUnmixing2.m
+    ├── LinearUnmixing3.m
+    ├── MVBPColorEncodedDepth.m
+    ├── MaximumVoxelBrightnessTheta.m
+    └── SphericalCoord.m
 ```
 - `OpticalFluenceNormalization.m`: Estimate and compensate for the non-uniform optical fluence in the 3D OAT breast image
 
@@ -311,6 +310,8 @@ The code can be run by the following line in MATLAB Command Window.
 
 It will open figure windows and save the following files in `data/`:
 - `vessels_color-encoded_depth_{on, non}_mvbp{x, y, z}_w{757, 800, 850}.png`: Maximum voxel brightness projections of the reconsturcted vascular images along _x_, _y_, and _z_-axis, that are color-encoded by depth, with and without optical fluence normalization.
+
+The following outputs will be printed out.
 
 ```
 Loading reconstructed images...
